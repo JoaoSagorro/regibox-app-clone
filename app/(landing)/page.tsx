@@ -1,17 +1,8 @@
-'use client';
-
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { Button } from "@mui/material";
 import Image from "next/image";
-import { useState } from "react";
 
-import useEmblaCarousel from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay';
-import CarouselComponent from "./_components/carousel";
 
 export default function LandingPage() {
-
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
 
   return (
     <>
@@ -40,13 +31,9 @@ export default function LandingPage() {
         </div>
 
         <div className="ml-20 mb-3">
-          <Button href="/login" variant="contained" className="text-neutral-50 bg-green-500/75 py-2 px-4 rounded-md hover:bg-green-500/65">
+          <Button href="/login" variant="contained" className="text-neutral-50 bg-green-500/75 py-3 px-4 rounded-md hover:bg-green-500/65">
             Start your journey
           </Button>
-        </div>
-
-        <div className="border flex justify-center">
-          <CarouselComponent />
         </div>
 
       </div>
