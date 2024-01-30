@@ -1,13 +1,17 @@
 'use client';
 
-import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { Button } from "@mui/material";
 import Image from "next/image";
 import { useState } from "react";
 
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
+import CarouselComponent from "./_components/carousel";
+
 export default function LandingPage() {
 
-  const [ activeIndex, setActiveIndex ] = useState(0);
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
 
   return (
     <>
@@ -40,20 +44,11 @@ export default function LandingPage() {
             Start your journey
           </Button>
         </div>
-      </div>
 
-      <div className="border">
-        <CCarousel activeIndex={activeIndex} transition="crossfade">
-          <CCarouselItem>
-            <CImage className="block w-[300px] my-3" src="/photo1.jpeg" alt="slide 1" />
-          </CCarouselItem>
-          <CCarouselItem>
-            <CImage className="block w-[300px] my-3" src="/photo2.jpeg" alt="slide 2" />
-          </CCarouselItem>
-          <CCarouselItem>
-            <CImage className="block w-[300px] my-3" src="/photo3.jpeg" alt="slide 3" />
-          </CCarouselItem>
-        </CCarousel>
+        <div className="border">
+          <CarouselComponent />
+        </div>
+
       </div>
     </>
   );
