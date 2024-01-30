@@ -11,13 +11,13 @@ const CarouselComponent = () => {
     <div className="overflow-hidden" ref={emblaRef}>
       <div className="flex">
         <div className="flex-[0_0_100%] min-w-0">
-          <Image src="/photo1" alt="photo 1" width={200} height={300} />
+          <Image src='/photo1.jpeg' alt="photo 1" width={200} height={300} />
         </div>
         <div className="flex-[0_0_100%] min-w-0">
-          <Image src="/photo2" alt="photo 2" width={200} height={300} />
+          <Image src='/photo2.jpeg' alt="photo 2" width={200} height={300} />
         </div>
         <div className="flex-[0_0_100%] min-w-0">
-          <Image src={`/photo3`} alt="photo 3" width={200} height={300} />
+          <Image src='/photo3.jpeg' alt="photo 3" width={200} height={300} />
         </div>
       </div>
     </div>

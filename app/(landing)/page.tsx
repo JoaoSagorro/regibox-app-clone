@@ -45,7 +45,7 @@ export default function LandingPage() {
           </Button>
         </div>
 
-        <div className="border">
+        <div className="border flex justify-center">
           <CarouselComponent />
         </div>
 
