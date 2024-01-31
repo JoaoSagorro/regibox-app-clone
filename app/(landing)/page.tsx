@@ -31,7 +31,7 @@ export default function LandingPage() {
         </div>
 
         <div className="ml-20 mb-3">
-          <Button href="/login" variant="contained" className="text-neutral-50 bg-green-500/75 py-3 px-4 rounded-md hover:bg-green-500/65">
+          <Button href="/login" variant="contained" className="text-neutral-50 py-4 px-3 rounded-md">
             Start your journey
           </Button>
         </div>

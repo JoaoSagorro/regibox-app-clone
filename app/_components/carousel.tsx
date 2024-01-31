@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import UseEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";

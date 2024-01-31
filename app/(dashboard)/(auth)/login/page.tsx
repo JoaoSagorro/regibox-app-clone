@@ -1,6 +1,7 @@
-'use client';
+import { authenticate } from '@/lib/'
 
 import CarouselComponent from "@/app/_components/carousel";
+
 
 const LoginPage = () => {
   return(
