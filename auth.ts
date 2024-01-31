@@ -2,7 +2,9 @@ import NextAuth from "next-auth";
 import { authConfig } from "./auth.config";
 import Credentials from "next-auth/providers/credentials";
 import { z } from 'zod';
-import { sql } from '@ver'
+import { sql } from '@vercel/postgres';
+import type { User } from '@/lib/'
+import bcrypt from 'bcrypt';
 
 export const { auth, signIn, signOut } = NextAuth({
   ...authConfig,
