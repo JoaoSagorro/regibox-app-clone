@@ -1,5 +1,7 @@
-import { Button } from "@mui/material";
+
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function LandingPage() {
@@ -31,8 +33,10 @@ export default function LandingPage() {
         </div>
 
         <div className="ml-20 mb-3">
-          <Button href="/login" variant="contained" className="text-neutral-50 py-4 px-3 rounded-md">
-            Start your journey
+          <Button asChild variant="ghost" className="bg-blue-700 text-neutral-50 py-4 px-3 rounded-md hover:bg-blue-500">
+            <Link href="/login">
+              Start your journey
+            </Link>
           </Button>
         </div>
 

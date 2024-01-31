@@ -9,12 +9,15 @@ export default function LoginForm () {
   const [ errorMessage, dispatch ] = useFormState(authenticate, undefined);
 
   return(
-    <div className="border-2 border-black flex flex-col">
+    <div className="border-2 border-black flex flex-col w-7/12 justify-center">
 
       <form action={dispatch} className="flex flex-col border-2 border-black">
-        <h1 className="text-center text-white">Login</h1>
 
-        <input type="text" />
+        <h1 className="text-start text-4xl text-white mb-6">Login</h1>
+
+        <input type="text" className="w-6/12 h-10 mb-4 rounded-lg"/>
+
+        <input type="text" className="w-6/12 h-10 mb-4 rounded-lg"/>
 
         <LoginButton />
 
@@ -32,7 +35,7 @@ const LoginButton = () => {
   const { pending } = useFormStatus();
 
   return(
-    <Button aria-disabled={pending}>
+    <Button aria-disabled={pending} className="w-6/12 bg-blue-700 text-white" variant="ghost">
       Log me in!
     </Button>
   );
