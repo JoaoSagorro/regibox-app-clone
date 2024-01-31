@@ -1,18 +1,17 @@
-import { authenticate } from '@/lib/'
+import { authenticate } from "@/lib/action";
 
-import CarouselComponent from "@/app/_components/carousel";
+import LoginForm from "@/app/_components/login-form";
 
 
 const LoginPage = () => {
   return(
     <>
-      <div className=" w-4/12 h-screen flex items-center justify-center">
-        <CarouselComponent/>
-      </div>
 
-      <div className=" w-8/12 h-screen flex items-center justify-center">
-        This is the login page!
-      </div>
+          <div className=" w-8/12 h-full flex items-center justify-center">
+
+            <LoginForm />
+
+          </div>
     </>
   );
 };

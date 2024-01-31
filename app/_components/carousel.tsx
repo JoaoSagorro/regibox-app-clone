@@ -10,7 +10,7 @@ const CarouselComponent = () => {
   const [ emblaRef ] = UseEmblaCarousel({ loop: true }, [Autoplay()]);
 
   return(
-    <div className="overflow-hidden w-full h-screen flex items-center justify-center" ref={emblaRef}>
+    <div className="rounded-md overflow-hidden w-full h-full flex items-center justify-center" ref={emblaRef}>
       <div className="flex">
         <div className="flex-[0_0_100%] min-w-0">
           <Image src='/photo1.jpeg' alt="photo 1" width={900} height={300} quality={100} />
