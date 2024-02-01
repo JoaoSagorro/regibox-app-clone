@@ -7,11 +7,12 @@ const LoginPage = () => {
   return(
     <>
 
-          <div className="w-8/12 h-full flex items-center justify-center">
-            
-            <LoginForm />
+      <div className="w-6/12 h-full flex flex-col items-center justify-center ">
 
-          </div>
+        <LoginForm />
+
+      </div>
+
     </>
   );
 };
