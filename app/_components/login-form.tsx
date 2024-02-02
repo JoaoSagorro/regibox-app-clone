@@ -13,7 +13,7 @@ export default function LoginForm () {
   return(
     <div className="flex flex-col w-7/12 justify-center">
 
-      <form action={dispatch} className="flex flex-col ">
+      <form action={dispatch} className="flex flex-col">
 
         <h1 className="text-start text-4xl font-semibold mb-1">Login</h1>
 

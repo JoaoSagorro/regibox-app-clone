@@ -7,7 +7,7 @@ const LoginPage = () => {
   return(
     <>
 
-      <div className="w-6/12 h-full flex flex-col items-center justify-center ">
+      <div className="w-6/12 h-full flex flex-col items-center justify-center border-2 border-black">
 
         <LoginForm />
 
