@@ -17,7 +17,7 @@ export default function LoginForm () {
 
         <h1 className="text-start text-4xl font-semibold mb-1">Login</h1>
 
-        <h2 className="text-start text-md font-extralight mb-6">Enter your login details please.</h2>
+        <h2 className="text-start text-md font-extralight mb-6 opacity-65">Enter your login details please.</h2>
 
         <input type="text" className="w-11/12 h-10 mt-2 mb-4 px-2 rounded-lg bg-slate-200 border text-black" placeholder="Email"/>
 

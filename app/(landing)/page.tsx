@@ -33,7 +33,7 @@ export default function LandingPage() {
         </div>
 
         <div className="ml-20 mb-3">
-          <Button asChild variant="ghost" className="bg-blue-700 text-neutral-50 py-4 px-3 rounded-md hover:bg-blue-500">
+          <Button asChild variant="ghost" className="bg-blue-700 text-md text-neutral-50 py-6 px-8 rounded-md hover:bg-blue-500">
             <Link href="/login">
               Start your journey
             </Link>
