@@ -2,9 +2,9 @@
 
 import { useFormState, useFormStatus } from "react-dom";
 import { authenticate } from "@/lib/action";
-import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import Link from "next/link";
+import ButtonComponent from "./button";
 
 export default function LoginForm () {
 
@@ -36,7 +36,7 @@ export default function LoginForm () {
 
         </div>
 
-        <LoginButton />
+        <ButtonComponent>Log me in</ButtonComponent>
 
         <div>
           {errorMessage && (<p className="text-red-600">{errorMessage}</p>)}
@@ -50,16 +50,5 @@ export default function LoginForm () {
         </div>
       </div>
     </div>
-  );
-}
-
-const LoginButton = () => {
-
-  const { pending } = useFormStatus();
-
-  return(
-    <Button aria-disabled={pending} className="w-11/12 bg-blue-700 text-white hover:bg-blue-500 shadow-lg hover:shadow-none" variant="ghost">
-      Log me in!
-    </Button>
   );
 };

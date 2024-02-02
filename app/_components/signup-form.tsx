@@ -1,9 +1,6 @@
-'use client';
-
-import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import Link from "next/link";
-import { useFormStatus } from "react-dom";
+import ButtonComponent from "./button";
 
 
 const SignupForm = () => {
@@ -39,7 +36,8 @@ const SignupForm = () => {
             </label>
           </div>
         </div>
-        <SignupButton />
+
+        <ButtonComponent>I'm ready</ButtonComponent>
 
       </form>
 
@@ -49,14 +47,3 @@ const SignupForm = () => {
 };
 
 export default SignupForm;
-
-const SignupButton = () => {
-
-  const { pending } = useFormStatus();
-
-  return(
-    <Button aria-disabled={pending} className="w-11/12 bg-blue-700 text-white hover:bg-blue-500 shadow-lg hover:shadow-none" variant="ghost">
-      I'm ready!
-    </Button>
-  );
-};
