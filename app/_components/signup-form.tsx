@@ -1,27 +1,34 @@
+'use client';
+
 import { Checkbox } from "@/components/ui/checkbox";
 import Link from "next/link";
 import ButtonComponent from "./button";
+import { useState } from "react";
+import handleSubmit from "@/actions/submit";
 
 
 const SignupForm = () => {
+
+  const [ data, setData ] = useState();
+
   return(
     <div className="flex flex-col w-7/12 justify-center">
 
-      <form className="flex flex-col ">
+      <form className="flex flex-col" onSubmit={handleSubmit}>
 
         <h1 className="text-start text-4xl font-semibold mb-1">Sign up</h1>
 
         <h2 className="text-start text-sm font-extralight mb-4 opacity-65">It only takes you few seconds to create your account</h2>
 
-        <input type="text" className="w-11/12 h-10 mt-2 mb-4 px-2 rounded-lg bg-slate-200 border text-black" placeholder="First Name"/>
+        <input type="text" className="w-11/12 h-10 mt-2 mb-4 px-2 rounded-lg bg-slate-200 border text-black" placeholder="First Name" required/>
 
-        <input type="text" className="w-11/12 h-10 mt-2 mb-4 px-2 rounded-lg bg-slate-200 border text-black" placeholder="Last Name"/>
+        <input type="text" className="w-11/12 h-10 mt-2 mb-4 px-2 rounded-lg bg-slate-200 border text-black" placeholder="Last Name" required/>
 
-        <input type="text" className="w-11/12 h-10 mt-2 mb-4 px-2 rounded-lg bg-slate-200 border text-black" placeholder="Email"/>
+        <input type="text" className="w-11/12 h-10 mt-2 mb-4 px-2 rounded-lg bg-slate-200 border text-black" placeholder="Email" required/>
 
-        <input type="text" className="w-11/12 h-10 mt-2 mb-4 px-2 rounded-lg bg-slate-200 border text-black" placeholder="Password"/>
+        <input type="text" className="w-11/12 h-10 mt-2 mb-4 px-2 rounded-lg bg-slate-200 border text-black" placeholder="Password" required/>
 
-        <input type="text" className="w-11/12 h-10 mt-2 mb-4 px-2 rounded-lg bg-slate-200 border text-black" placeholder="Retype password"/>
+        <input type="text" className="w-11/12 h-10 mt-2 mb-4 px-2 rounded-lg bg-slate-200 border text-black" placeholder="Retype password" required/>
 
 
         <div className="flex justify-between mb-4">
