@@ -5,3 +5,6 @@ const ClassesPage = () => {
     </div>
   );
 };
+
+
+export default ClassesPage;

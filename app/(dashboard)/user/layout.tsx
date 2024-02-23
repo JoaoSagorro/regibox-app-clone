@@ -1,4 +1,4 @@
-import UserSidebar from "./_user-components/sidebar";
+import UserSidebar from "./_components/sidebar";
 
 const UserLayout = ({
   children,
