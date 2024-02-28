@@ -46,7 +46,7 @@ const UserLayout = ({
         <NavigationBar title="Logout" link='/login'/>
       </div>
 
-      <div className="bg-[#cadfe5] flex w-full h-screen">
+      <div className="bg-[#cadfe5] flex flex-col w-full h-full justify-between">
         {children}
       </div>
     </>

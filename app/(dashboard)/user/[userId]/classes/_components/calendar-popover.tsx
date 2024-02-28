@@ -9,7 +9,7 @@ export const CalendarPopover = ({
   return(
     <Popover>
       <PopoverTrigger>
-        <CalendarIcon />
+        <CalendarIcon className="w-7 h-7"/>
       </PopoverTrigger>
 
       <PopoverContent>
