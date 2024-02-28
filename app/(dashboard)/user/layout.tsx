@@ -9,7 +9,7 @@ const UserLayout = ({
 
   return(
     <>
-      <div className="w-full sticky top-0 flex justify-evenly border-black border-2 bg-white py-3 z-10">
+      <div className="w-full sticky top-0 flex justify-evenly bg-white py-3 z-10">
         <NavigationBar title="Classes" link='/users/1/classes'>
           <ul>
             <li className="my-2">Schedule</li>
