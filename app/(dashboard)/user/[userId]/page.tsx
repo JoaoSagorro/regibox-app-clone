@@ -1,7 +1,7 @@
 const UserIdPage = () => {
   return(
     <div>
-      This is one user page
+      MY DASHBOARD
     </div>
   )
 };
