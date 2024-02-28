@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 
 interface NavigationBarProps {
+  children?: React.ReactNode;
   title: string;
   className?: string;
   link: string;
@@ -19,6 +20,7 @@ interface NavigationBarProps {
 // TODO: each component must have a title and a link for the specific page
 
 export const NavigationBar = ({
+  children,
   title,
   className,
   link,
@@ -28,10 +30,10 @@ export const NavigationBar = ({
       <NavigationMenuList className="w-full">
 
           <NavigationMenuItem className="font-semibold">
-            <NavigationMenuTrigger> {title} </NavigationMenuTrigger>
+            <NavigationMenuTrigger className="text-md">{title}</NavigationMenuTrigger>
             <NavigationMenuContent className="w-24 flex items-center justify-start ml-2">
               <div className="w-[200px]">
-                <NavigationMenuLink href={link}>This is a link</NavigationMenuLink>
+                <NavigationMenuLink href={link} className="text-sm">{children}</NavigationMenuLink>
               </div>
             </NavigationMenuContent>
           </NavigationMenuItem>
