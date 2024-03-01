@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CoachAvatarComponent } from "./coach-avatar";
+import { Card, CardHeader } from "@/components/ui/card";
 
 interface ClassCardComponentProps {
   title?: string,
@@ -15,12 +16,13 @@ export const ClassCardComponent = ({
   endTime,
 }: ClassCardComponentProps) => {
   return(
-    <div className="border-2 border-red-800 w-11/12 backdrop-blur-md bg-blue-100 rounded-md flex justify-around items-center mb-3 mx-3">
-          <div className="flex flex-col items-center my-2">
+
+    <Card>
+      <CardHeader>
             <h1>Coach</h1>
             <p>Rich Froning</p>
             <CoachAvatarComponent />
-          </div>
+      </CardHeader>
           <div>
             <h1>Crossfit Class</h1>
             <p>From: <span>10am</span></p>
@@ -29,6 +31,7 @@ export const ClassCardComponent = ({
           <div>
             <Button>Schedule</Button>
           </div>
-        </div>
+      </div>
+    </Card>
   );
 };
