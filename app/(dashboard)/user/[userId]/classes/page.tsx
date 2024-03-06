@@ -9,12 +9,12 @@ const ClassesPage = () => {
 
   return(
     <>
-      <div className="w-full border-2 border-black flex items-center">
+      <div className="w-full flex items-center">
         <CalendarComponent />
       </div>
 
-      <div className="border-2 border-black w-full mt-2 flex justify-between">
-        <div className="border-2 border-black w-full">
+      <div className="w-full mt-2 flex justify-between">
+        <div className="w-full ml-3">
           <ClassCardComponent/>
           <ClassCardComponent/>
           <ClassCardComponent/>
@@ -32,7 +32,7 @@ const ClassesPage = () => {
           <ClassCardComponent/>
           <ClassCardComponent/>
         </div>
-        <div className="border-2 border-black w-full">
+        <div className="w-full">
           <WorkoutCardComponent />
         </div>
       </div>

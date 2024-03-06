@@ -2,8 +2,8 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 
 export const WorkoutCardComponent = () => {
   return(
-    <div className="border-2 border-red-700 flex justify-center">
-      <Card>
+    <div className="flex justify-center">
+      <Card className="my-2">
         <CardHeader>
           <h1>Open workout 24.1</h1>
         </CardHeader>
